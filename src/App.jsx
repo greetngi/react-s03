@@ -1,23 +1,17 @@
-
-import Contact from "./assets/Contact";
-import Hello from "./assets/Hello";
+import Contact from './assets/Contact';
+import Hello from './assets/Hello';
+// import Counter from './assets/Counter';
 
 function App() {
-  const helloData = [
-    {name: 'Anirach',message: 'Hi there'},
-    {name: 'Tom',message: 'Hello...'}
-  ];
-
   return(
-    <div className="App">
-      < Contact />
-      {helloData.map((data,index)=>(
-        <Hello key={index} name={data.name} message={data.message} />
-      ))}
-      <Contact email="eeee@eee.ee" phone = "081684651" />
+    <div>
+    <Hello name="Bob" message="hoe r u?"/>
+    <Hello name="Tom"/>
+    <Hello />
+
+    <Contact email="eeee@eee.ee" phone = "081684651" />
     </div>
-  );
- 
+  )
 }
 
 export default App;
